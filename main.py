@@ -247,6 +247,44 @@ async def restart_handler(_, m):
         
 @bot.on_message(filters.command(["start"]))
 async def start_command(bot: Client, message: Message):
+    # लोडिंग मैसेज भेजें
+    loading_message = await bot.send_message(
+        chat_id=message.chat.id,
+        text="Loading... ⏳🔄"
+    )
+  
+    # एनिमेशन के लिए प्रोग्रेस अपडेट करें
+    await asyncio.sleep(1)
+    await loading_message.edit_text(
+        "Initializing Uploader bot... 🤖\n\n"
+        "Progress: ⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%\n\n"
+    )
+
+    await asyncio.sleep(1)
+    await loading_message.edit_text(
+        "Loading features... ⏳\n\n"
+        "Progress: 🟥🟥⬜⬜⬜⬜⬜⬜ 25%\n\n"
+    )
+    
+    await asyncio.sleep(1)
+    await loading_message.edit_text(
+        "This may take a moment, sit back and relax! 😊\n\n"
+        "Progress: 🟧🟧🟧🟧⬜⬜⬜⬜ 50%\n\n"
+    )
+
+    await asyncio.sleep(1)
+    await loading_message.edit_text(
+        "Checking Bot Status... 🔍\n\n"
+        "Progress: 🟨🟨🟨🟨🟨🟨⬜⬜ 75%\n\n"
+    )
+
+    await asyncio.sleep(1)
+    await loading_message.edit_text(
+        "Checking Bot Status... 🔍\n\n"
+        "Progress:🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%\n\n"
+    )
+        
+    # रैंडम इमेज और कैप्शन भेजें
     random_image_url = random.choice(image_urls)
     caption = (
         "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
@@ -257,6 +295,9 @@ async def start_command(bot: Client, message: Message):
         caption=caption,
         reply_markup=keyboard
     )
+
+    # लोडिंग मैसेज डिलीट करें
+    await loading_message.delete()
 
 @bot.on_message(filters.command(["id"]))
 async def id_command(client, message: Message):
