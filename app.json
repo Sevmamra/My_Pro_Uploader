@@ -1,0 +1,49 @@
+{
+  "name": "𝐓𝐞𝐱𝐭 𝐋𝐞𝐞𝐜𝐡",
+  "description": "𝑻𝒆𝒙𝒕 𝑳𝒆𝒆𝒄𝒉 𝑽𝒊𝒅𝒆𝒐 𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒐𝒓 𝑭𝒐𝒓 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎",
+  "keywords": [
+    "text-video",
+    "video-extract",
+    "pyrogram"
+  ],
+  "website": "https://github.com/nikhilsainiop/",
+  "repository": "https://github.com/nikhilsainiop/Saini-txt-direct",
+  "logo": "https://github.com/nikhilsainiop/saini-txt-direct/blob/main/SAINIBOTSLOGO.svg",
+  "success_url": "/welcome",
+  "stack": "heroku-24",
+  "env": {
+        "API_ID": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "𝑼𝒔𝒆𝒓 𝑰𝑫 𝑶𝒇 𝑩𝒐𝒕 𝑶𝒘𝒏𝒆𝒓",
+            "required": true
+        }
+   },
+  "image": "heroku/python",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
+    }
+  }
+}
