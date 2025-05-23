@@ -287,7 +287,7 @@ async def start_command(bot: Client, message: Message):
     # रैंडम इमेज और कैप्शन भेजें
     random_image_url = random.choice(image_urls)
     caption = (
-        "જીતો ચીગમ હૈ 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        "ʜᴇʟʟᴏ,ꜱɪʀ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴜʟᴛɪᴍᴀᴛᴇ ᴛxᴛ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ ᴛʜɪꜱ ʙᴏᴛ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ᴠɪᴅᴇᴏꜱ ᴀɴᴅ ᴘᴅꜰꜱ ꜰʀᴏᴍ ʏᴏᴜʀ ᴛxᴛ ꜰɪʟᴇ ᴄʟɪᴄᴋ ᴏɴ ꜱᴛᴀʀᴛ ᴘʀᴏᴄᴇꜱꜱ ʙᴜᴛᴛᴏɴ ꜰᴏʀ ꜱᴛᴀʀᴛ ᴘʀᴏᴄᴇꜱꜱ ᴀɴᴅ ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ꜰᴏʀ ʜᴇʟᴘ"
     )
     await bot.send_photo(
         chat_id=message.chat.id,
@@ -439,7 +439,7 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     if raw_text3 == '1':
-        CR = '[𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)'
+        CR = '[𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)'
     else:
         CR = raw_text3
 
@@ -544,12 +544,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🎞️ Title :** `{name1} [{res}] .mkv`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                cc1 = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**📁 Title :** `{name1} .pdf`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                cczip = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**📁 Title :** `{name1} .zip`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                ccimg = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🖼️ Title :** `{name1} .jpg`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                ccm = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🎵 Title :** `{name1} .mp3`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
-                cchtml = f'**——— ✦ {str(count).zfill(3)} ✦ ———**\n\n**🌐 Title :** `{name1} .html`\n\n**📚 Course :** `{b_name}`\n\n**🌟 Extracted By :** {CR}'
+                cc = f'[🎬] 𝗩𝗶𝗱_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
+                cc1 = f'[📁] 𝗣𝗱𝗳_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
+                cczip = f'[📁] 𝗣𝗱𝗳_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
+                ccimg = f'[📁] 𝗜𝗺𝗴_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
+                ccm = f'[🎵] Song_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
+                cchtml = f'[🌐] html_𝗜𝗱 : {str(count).zfill(3)}.\n\n📝𝗧𝗶𝘁𝗹𝗲 𝗡𝗮𝗺𝗲 ➤ {name1}\n\n📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ {b_name}\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤  {CR}'
                             
                   
                 if "drive" in url:
