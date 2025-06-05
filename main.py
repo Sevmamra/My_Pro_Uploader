@@ -339,7 +339,7 @@ async def txt_handler(client: Client, m: Message):
         f"┣⪼08. /info - Your information.\n"
         f"┣⪼09. /stop - Stop the Running Task. 🚫\n"
         f"╰⪼🔗  Direct Send Link For Extract (with https://)\n\n"
-        f"**If you have any questions, feel free to ask [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)! 💬**\n"
+        f"**If you have any questions, feel free to ask [𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)! 💬**\n"
         )
     ) 
 
@@ -411,7 +411,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗`]⚡⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -645,7 +645,7 @@ async def txt_handler(bot: Client, m: Message):
                                f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                                f"🛑**Send** /stop **to stop process**\n┃\n" \
-                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                     filename = res_file  
@@ -674,7 +674,7 @@ async def txt_handler(bot: Client, m: Message):
                                f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                                f"🛑**Send** /stop **to stop process**\n┃\n" \
-                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
@@ -703,7 +703,7 @@ async def txt_handler(bot: Client, m: Message):
                                f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">__**Api Link**__</a>\n' \
                                f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                                f"🛑**Send** /stop **to stop process**\n┃\n" \
-                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
+                               f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -733,7 +733,7 @@ async def txt_handler(bot: Client, m: Message):
                        f"├🔹𝙵𝚊𝚒𝚕𝚎𝚍 𝙻𝚒𝚗𝚔𝚜 : {failed_count}\n"
                        f"├✅𝚂𝚝𝚊𝚝𝚞𝚜 : 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍\n"
                        f"├─────────────────────\n"
-                       f"├✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎\n"
+                       f"├✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗\n"
                        f"╰─────────────────────╯\n`")
              
 bot.run()
